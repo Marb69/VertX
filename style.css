@@ -212,7 +212,7 @@ text-align: center;
 .form-container .form-group{
 
     
-    align-items: center;
+  
    display: flex;
     margin: 10px;
     justify-content:space-between ;
@@ -222,7 +222,7 @@ text-align: center;
 
     font-weight: 550;
     color: #f9efef;
-
+    margin-top: 15px;
     
 }
 .form-container .form-group textarea{
@@ -277,7 +277,7 @@ text-align: center;
 
     transform: scale(1.04);
     transition: .3s;
-    box-shadow: 0 5px 7px rgb(7, 55, 92);
+    box-shadow: 0 5px 7px rgb(75, 36, 22);
 }
 .form-container .button-container{
    
