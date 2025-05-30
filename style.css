@@ -85,7 +85,7 @@ text-align: center;
 .container-home{
 
  
-   background:linear-gradient(rgb(18, 18, 18),rgb(44, 43, 43));
+    background:linear-gradient(rgb(34, 33, 33),rgb(25, 24, 24));
     padding: 10px 40px;
 }
 
@@ -177,7 +177,7 @@ text-align: center;
 
 .container-aboutus{
 
-    background:linear-gradient(rgb(18, 18, 18),rgb(44, 43, 43));
+      background:linear-gradient(rgb(34, 33, 33),rgb(25, 24, 24));
  
    padding: 30px;
     
@@ -203,9 +203,9 @@ text-align: center;
 }
 .form-container {
 
-     background:linear-gradient(rgb(18, 18, 18),rgb(44, 43, 43));
+     background:linear-gradient(rgb(34, 33, 33),rgb(25, 24, 24));
     padding: 10px;
-    height: 110vh;
+
    
 }
 
@@ -262,7 +262,7 @@ text-align: center;
 .form-container .button-container button{
 
     
-   float: right;
+
    border-radius: 5px;
      background-color: rgb(230, 49, 49);
     padding: 10px;
@@ -364,10 +364,7 @@ footer{
 
     }  
             
-   .form-container {
-
-    height: 150vh;
-   }
+   
     .form-container .form-group {
  
         display: block;
@@ -379,13 +376,16 @@ footer{
         width: 100%;
 
     }
-      .form-container .button-container button{
+      .form-container .button-container .btn1 {
 
         width: 100%;
-        justify-self: center;
+        
       }
 
-   
+       .form-container .button-container .btn1 button{
+
+        width: 100%;
+       }
        
       .container-about h1{
 
