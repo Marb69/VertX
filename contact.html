@@ -24,13 +24,15 @@
         </nav>
     </header>
     <main>
+
+ 
            <section class="banner-section">
              <div class="banner">
  
         </div>    
         </section>
         <section class="contact-form-section">
-            <form action="">
+       
 
          
             <div class="form-container">
@@ -38,35 +40,35 @@
        <div class="form-group">
 
                       <label for="fname">Firstname</label>           
-                      <input type="text" id="fname" placeholder="Your Name" required>
+                      <input type="text" id="fname" placeholder="Your Name" >
 
                 </div>
                
                <div class="form-group">
 
                      <label for="lname">Lastname</label>
-                     <input type="text" id="lname" placeholder="Your Last Name" required>
+                     <input type="text" id="lname" placeholder="Your Last Name">
                  
                 </div>
 
               <div class="form-group">
 
                     <label for="telephone">Telephone No.</label>
-                    <input type="tel" id="telephone" placeholder="Valid Format (123) 4356-7890" required>
+                    <input type="tel" id="telephone" placeholder="Valid Format (123) 4356-7890" >
                   
              </div>
 
             <div class="form-group">
 
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="sample@gmail.com" required>
+                    <input type="email" id="email" placeholder="sample@gmail.com" >
                     
                   
                 </div>
              <div class="form-group">
 
                  <label for="org">Organization</label>
-                 <input type="text" id="org"  required>
+                 <input type="text" id="org"  >
                            
             </div>
             
@@ -75,6 +77,9 @@
                     <label for="province">Province</label>
                     <select name="province" id="province">
                          <option value="" disabled selected>Select your province</option>
+                         <option value="davao del norte">Davao Del Norte</option>
+                          <option value="cebu"> Cebu</option>
+                           <option value="bukidnon">Bukidnon</option>
                     </select>
       
                 </div>
@@ -84,6 +89,9 @@
                  <label for="city">City/Town</label>                   
                  <select name="city" id="city">
                      <option value="" disabled selected>Select your Municipality or city</option>
+                        <option value="tagum city">Tagum City</option>
+                          <option value="lapu-lapu city">Lapu-Lapu City</option>
+                           <option value="malaybalay city">Malaybalay City</option>
                  </select>   
 
             </div>
@@ -93,6 +101,9 @@
                   <label for="Barangay">Barangay</label>
                   <select name="Barangay" id="Barangay">
                      <option value="" disabled selected >Select your Barangay</option>
+                        <option value="mankilam">Mankilam</option>
+                          <option value="pusok">Pusok</option>
+                           <option value="casisang">Casisang</option>
                   </select>
                          
             </div>
@@ -100,7 +111,7 @@
            <div class="form-group">
 
                  <label for="Street">Street</label>
-                 <input type="text" id="Street"  required>
+                 <input type="text" id="Street"  >
                            
             </div>
                
@@ -114,17 +125,87 @@
 
              <div class="button-container">
                 <div class="btn1">
- <button>Submit</button>
+ <button onclick="sub()">Submit</button>
                 </div >
                    
                 </div>
                    </div>
-              </form>
+      
         </section>
     </main>
        <footer>
 
        <p>Copy&copy;2025,VertX</p>
     </footer>
+
+
+
+    <script>
+
+
+function sub(){
+
+
+        let fname = document.getElementById('fname').value;
+       let lname = document.getElementById('lname').value;
+          let telephone = document.getElementById('telephone').value;
+         let email = document.getElementById('email').value;
+          let org = document.getElementById('org').value;
+           let province = document.getElementById('province').value;
+          let city = document.getElementById('city').value;
+         let Barangay = document.getElementById('Barangay').value;
+           let Street = document.getElementById('Street').value;
+         let message = document.getElementById('message').value;
+
+
+         if(fname=="" || lname=="" || telephone=="" || email=="" || org=="" || province=="" || city=="" || Barangay=="" || Street=="" || message=="" ){
+
+            alert("Input is empty");
+           
+
+         }
+
+         
+
+         else{
+
+
+            if(fname===lname){
+
+                alert("Firstname and Lastname are same!");
+            }
+
+            else if(isNaN(telephone)){
+
+                alert("telephone is not a number!")
+
+            }
+  
+
+            else if(alert( province==="davao del norte" && city==="tagum city" && Barangay==="mankilam" )){
+                           
+
+                
+              }
+
+            else if(message.length<=10){
+
+                alert("message is lessthan 10");
+
+            }
+
+            else{
+
+                
+            } 
+                        
+
+                }
+            
+         
+}
+
+
+    </script>
 </body>
 </html>
